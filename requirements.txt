@@ -1,0 +1,31 @@
+# Paquetes principales para ETL
+pandas>=1.5.0
+numpy>=1.23.0
+python-dateutil>=2.8.0
+
+# Análisis de datos y visualización
+matplotlib>=3.6.0
+seaborn>=0.12.0
+scipy>=1.9.0
+pyarrow>=10.0.0
+
+# Testing y validación
+pytest>=7.2.0
+pytest-html>=3.2.0
+pytest-cov>=4.0.0
+
+# Herramientas de desarrollo
+jupyter>=1.0.0
+notebook>=6.5.0
+ipython>=8.8.0
+
+# Para procesamiento JSON/CSV
+ujson>=5.7.0
+openpyxl>=3.1.0
+
+# Utilidades
+tqdm>=4.65.0  # Barras de progreso
+python-dotenv>=1.0.0  # Variables de entorno
+
+# Great Expectations (opcional para validaciones avanzadas)
+# great-expectations>=0.16.0
