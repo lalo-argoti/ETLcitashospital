@@ -1,0 +1,22 @@
+[
+  {
+    "id_paciente": 1,
+    "nombre": "Juan Pérez",
+    "fecha_nacimiento": "1980-05-15",
+    "edad": 43,
+    "sexo": "M",
+    "email": "juan@email.com",
+    "telefono": "3001234567",
+    "ciudad": "Bogotá"
+  },
+  {
+    "id_paciente": 2,
+    "nombre": "Ana García",
+    "fecha_nacimiento": "1990-08-20", 
+    "edad": 33,
+    "sexo": "F",
+    "email": "ana@email.com",
+    "telefono": "3109876543",
+    "ciudad": "Medellín"
+  }
+]

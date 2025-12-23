@@ -1,0 +1,47 @@
+{
+  "pipeline_execution": {
+    "start_time": "2025-12-22T20:36:11.820047",
+    "end_time": "2025-12-22T20:36:22.083485",
+    "elapsed_seconds": 10.26,
+    "total_scripts": 4,
+    "successful_scripts": 4
+  },
+  "script_results": {
+    "01_exploratorio.py": {
+      "return_code": 0,
+      "stdout": "===============================================\n\n1. Información general:\n<class 'pandas.core.frame.DataFrame'>\nRangeIndex: 9961 entries, 0 to 9960\nData columns (total 7 columns):\n #   Column        Non-Null Count  Dtype  \n---  ------        --------------  -----  \n 0   id_cita       9961 non-null   object \n 1   id_paciente   9961 non-null   int64  \n 2   fecha_cita    6683 non-null   object \n 3   especialidad  8288 non-null   object \n 4   medico        7928 non-null   object \n 5   costo         8237 non-null   float64\n 6   estado_cita   7419 non-null   object \ndtypes: float64(1), int64(1), object(5)\nmemory usage: 544.9+ KB\nNone\n\n2. Valores nulos por columna:\nid_cita            0\nid_paciente        0\nfecha_cita      3278\nespecialidad    1673\nmedico          2033\ncosto           1724\nestado_cita     2542\ndtype: int64\n\n3. Estadísticas por especialidad:\nespecialidad\nNeurología     1680\nGinecología    1674\nOrtopedia      1661\nPediatría      1638\nCardiología    1635\nName: count, dtype: int64\n",
+      "stderr": "",
+      "timestamp": "2025-12-22T20:36:12.366802"
+    },
+    "02_limpieza.py": {
+      "return_code": 0,
+      "stdout": "---------\ntotal                     5010       5010       0.0%      \nnulos_edad                1647       2                    \nnulos_sexo                1023       1023                 \nnulos_email               2506       2506                 \nnulos_telefono            1668       1668                 \n\nCITAS - COMPARACIÓN:\n----------------------------------------\nMétrica                   Antes      Despues    Mejora    \n----------------------------------------\ntotal                     9961       9961       0.0%      \nnulos_fecha               3278       3278                 \nnulos_costo               1724       299                  \nnulos_medico              2033       2033                 \nnulos_estado              2542       0                    \n\nExportando datos limpios...\n✓ Datos exportados exitosamente:\n  - datoscln/pacientes_limpios.csv\n  - datoscln/pacientes_limpios.parquet\n  - datoscln/citas_limpios.csv\n  - datoscln/citas_limpios.parquet\n\n¡Proceso completado exitosamente!\n",
+      "stderr": "",
+      "timestamp": "2025-12-22T20:36:18.120655"
+    },
+    "03_validaciones.py": {
+      "return_code": 0,
+      "stdout": "=============================================\n\n1. Pacientes sin citas médicas: 23\n\n2. Citas con pacientes no encontrados: 190\n   IDs de pacientes inválidos:\n[6416 6148 6141 6095 6000 6327 6157 6065 6037 6477]\n\n3. Completitud de datos por ciudad:\n              telefono  email   sexo\nciudad                              \nBarranquilla     67.04  51.80  79.43\nBogotá           67.41  49.42  77.34\nBucaramanga      65.76  50.65  82.88\nCali             65.97  48.43  78.75\nMedellín         68.97  48.15  78.33\n\n4. Análisis de costos por especialidad:\n             costo                      \n             count    mean    min    max\nespecialidad                            \nCardiología   1635  166.13  100.0  220.0\nGinecología   1674  166.93  100.0  220.0\nNeurología    1680  167.29  100.0  220.0\nOrtopedia     1661  165.23  100.0  220.0\nPediatría     1638  167.03  100.0  220.0\n\n5. Posibles outliers en costos:\n\n6. Validación de fechas:\n   Citas en fin de semana: 1827\n   Citas anteriores al año 2000: 0\n",
+      "stderr": "",
+      "timestamp": "2025-12-22T20:36:19.621035"
+    },
+    "04_informe.py": {
+      "return_code": 0,
+      "stdout": "Generando informe técnico...\nCalculando métricas desde archivos limpios...\n✓ Métricas calculadas exitosamente\n✓ Informe técnico generado: reportes/informe_tecnico_calidad_datos.txt\n\n============================================================\nINFORME GENERADO EXITOSAMENTE\n============================================================\n\nPara ver el informe completo, abre el archivo:\n  informe_tecnico_calidad_datos.txt\n\nResumen de métricas incluidas:\n  • Pacientes: 5010\n  • Citas: 9961\n  • Calidad promedio: 79.24550898203593\n",
+      "stderr": "",
+      "timestamp": "2025-12-22T20:36:21.082180"
+    }
+  },
+  "generated_files": {
+    "datos_limpios": [
+      "datoscln/pacientes_limpios.parquet",
+      "datoscln/pacientes_limpios.csv",
+      "datoscln/citas_limpios.parquet",
+      "datoscln/citas_limpios.csv"
+    ],
+    "reportes": [
+      "reportes/informe_tecnico_calidad_datos.txt"
+    ],
+    "otros": []
+  }
+}

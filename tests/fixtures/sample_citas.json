@@ -1,0 +1,38 @@
+[
+  {
+    "id_cita": "c1",
+    "id_paciente": 1,
+    "fecha_cita": "2023-01-15",
+    "especialidad": "Cardiología",
+    "medico": "Dr. Pérez",
+    "costo": 150.0,
+    "estado_cita": "Completada"
+  },
+  {
+    "id_cita": "c2", 
+    "id_paciente": 2,
+    "fecha_cita": "2023-02-20",
+    "especialidad": "Pediatría",
+    "medico": "Dra. García",
+    "costo": 120.0,
+    "estado_cita": "Cancelada"
+  },
+  {
+    "id_cita": "c3",
+    "id_paciente": 999,
+    "fecha_cita": "2023-03-10",
+    "especialidad": "Neurología",
+    "medico": "Dr. López",
+    "costo": 200.0,
+    "estado_cita": "Programada"
+  },
+  {
+    "id_cita": "c4",
+    "id_paciente": 1,
+    "fecha_cita": "2030-12-31",
+    "especialidad": "Ortopedia",
+    "medico": "Dr. Martínez",
+    "costo": 180.0,
+    "estado_cita": "Reprogramada"
+  }
+]
