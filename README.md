@@ -23,12 +23,12 @@ python 02_limpieza_integrado.py
 ├── __pycache__
 │   ├── cargar_datos.cpython-38.pyc
 │   └── s0201_limpieza_fechas.cpython-38.pyc
-├── README.md
-├── reportes
+├── README.md                            #ThisFile
+├── reportes                             #Reportes
 │   ├── informe_tecnico_calidad_datos.txt
 │   └── pipeline_execution_report.json
 ├── requirements_testing.txt
-├── scripts
+├── scripts                               #Scripts
 │   ├── 01_exploratorio.py
 │   ├── 02_limpieza.py
 │   ├── 03_validaciones.py
@@ -36,7 +36,7 @@ python 02_limpieza_integrado.py
 │   ├── cargar_datos.py
 │   └── __pycache__
 │       └── cargar_datos.cpython-38.pyc
-├── tests
+├── tests                                  #Pruebas
 │   ├── conftest.py
 │   ├── fixtures
 │   │   ├── sample_citas.json
@@ -57,7 +57,7 @@ python 02_limpieza_integrado.py
 
 ```
 
-🔧 CARACTERÍSTICAS PRINCIPALES
+# 🔧 CARACTERÍSTICAS PRINCIPALES
 Corrección inteligente de fechas: Detecta y corrige formatos incorrectos
 
 Detección de ambigüedades: Identifica fechas con múltiples interpretaciones
@@ -70,7 +70,7 @@ Visualizaciones: Gráficos para análisis visual
 
 Métricas detalladas: JSON con todas las métricas
 
-📊 MÉTRICAS GENERADAS
+## 📊 MÉTRICAS GENERADAS
 El sistema calcula y reporta:
 
 Antes/después de cada transformación
@@ -83,8 +83,7 @@ Validaciones de integridad referencial
 
 Score de calidad por paciente
 
-🎯 PARA LA PRUEBA TÉCNICA
-Esto demuestra:
+## 🎯 PARA LA PRUEBA TÉCNICA
 
 Pensamiento analítico para problemas complejos
 
