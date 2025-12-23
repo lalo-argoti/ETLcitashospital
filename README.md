@@ -15,13 +15,16 @@ source venv_hospital/bin/activate  # Linux/Mac
 # venv_hospital\Scripts\activate   # Windows
 
 # c. Instalar TODO desde requirements.txt
-pip install -r requirements.txt
+venv_hospital/bin/pip3 install -r requirements.txt
 
 # d. Verificar instalación
 pip list | grep -E "pandas|numpy|matplotlib"
 
 # e. Ejecuta el pipeline principal
-python 02_limpieza_integrado.py
+venv_hospital/bin/python3 scripts/02_limpieza.py
+o
+venv_hospital/bin/python3 main.py
+
 ```
 # 3. Revisa los resultados en las carpetas generadas
 
