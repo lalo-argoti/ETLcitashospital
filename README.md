@@ -1,13 +1,26 @@
 # Prueba Técnica - Ingeniero de Datos
-## Sistema Integrado de Limpieza y Validación de Datos Hospitalarios
+## 1. Sistema Integrado de Limpieza y Validación de Datos Hospitalarios
 
-### 🚀 EJECUCIÓN RÁPIDA
+### 2. 🚀 EJECUCIÓN RÁPIDA
+
+puedes acceder a una copia desde 
+https://github.com/lalo-argoti/ETLcitashospital
 
 ```bash
-# 1. Asegúrate de tener Python 3.8+ y los requisitos
-pip install pandas numpy matplotlib seaborn
+# a. Crear entorno virtual (no está en el repo)
+python3 -m venv venv_hospital
 
-# 2. Ejecuta el pipeline principal
+# b. Activar entorno
+source venv_hospital/bin/activate  # Linux/Mac
+# venv_hospital\Scripts\activate   # Windows
+
+# c. Instalar TODO desde requirements.txt
+pip install -r requirements.txt
+
+# d. Verificar instalación
+pip list | grep -E "pandas|numpy|matplotlib"
+
+# e. Ejecuta el pipeline principal
 python 02_limpieza_integrado.py
 ```
 # 3. Revisa los resultados en las carpetas generadas
